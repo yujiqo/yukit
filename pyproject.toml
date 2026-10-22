@@ -1,0 +1,21 @@
+[project]
+name = "yukit"
+version = "0.1.0"
+description = "Step by step dataset preparation: missing values, noise removal, label and one hot encoding"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.10.3",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.3,<0.14"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "yukit"
+namespace = true
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
